@@ -7,14 +7,14 @@ int main() {
 
     // Declarando os dados da primeira carta
     char estado1;
-    char codigo1[3];
+    char codigo1[4];
     char cidade1[20];
     int populacao1, pontosTuristicos1;
     float area1, pib1;
 
     // Declarando os dados da segunda carta
     char estado2;
-    char codigo2[3];
+    char codigo2[4];
     char cidade2[20];
     int populacao2, pontosTuristicos2;
     float area2, pib2;
