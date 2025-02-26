@@ -9,14 +9,16 @@ int main() {
     char estado1;
     char codigo1[4];
     char cidade1[20];
-    int populacao1, pontosTuristicos1;
+    unsigned long int populacao1;
+    int pontosTuristicos1;
     float area1, pib1;
 
     // Declarando os dados da segunda carta
     char estado2;
     char codigo2[4];
     char cidade2[20];
-    int populacao2, pontosTuristicos2;
+    unsigned long int populacao2;
+    int pontosTuristicos2;
     float area2, pib2;
 
     
@@ -33,7 +35,7 @@ int main() {
     scanf("%s", cidade1);
 
     printf("População (ex.: 70502): ");
-    scanf("%d", &populacao1);
+    scanf("%ld", &populacao1);
 
     printf("Área (em km²): ");
     scanf("%f", &area1);
@@ -58,7 +60,7 @@ int main() {
     scanf("%s", cidade2);
 
     printf("População (ex.: 65300): ");
-    scanf("%d", &populacao2);
+    scanf("%ld", &populacao2);
 
     printf("Área (em km²): ");
     scanf("%f", &area2);
@@ -76,10 +78,12 @@ int main() {
     printf("Estado: %c\n", estado1);
     printf("Código: %s\n", codigo1);
     printf("Nome da Cidade: %s\n", cidade1);
-    printf("População: %d pessoas\n", populacao1);
+    printf("População: %ld pessoas\n", populacao1);
     printf("Área: %.2f km²\n", area1);
     printf("PIB: %.2f bilhões de reais\n", pib1);
     printf("Número de Pontos Turísticos: %d\n", pontosTuristicos1);
+    printf("Densidade Populacional: %.2f hab/km²\n", populacao1/area1);
+    printf("PIB per capita: %.2lf reais\n", ((double)pib1 * 1000000000) / populacao1);
 
 
     // Exibição dos dados da segunda carta
@@ -88,11 +92,12 @@ int main() {
     printf("Estado: %c\n", estado2);
     printf("Código: %s\n", codigo2);
     printf("Nome da Cidade: %s\n", cidade2);
-    printf("População: %d pessoas\n", populacao2);
+    printf("População: %ld pessoas\n", populacao2);
     printf("Área: %.2f km²\n", area2);
     printf("PIB: %.2f bilhões de reais\n", pib2);
     printf("Número de Pontos Turísticos: %d\n", pontosTuristicos2);
-
+    printf("Densidade Populacional: %.2f hab/km²\n", populacao2/area2);
+    printf("PIB per capita: %.2lf reais\n", ((double)pib2 * 1000000000) / populacao2);
 
     return 0;
 }
