@@ -52,6 +52,7 @@ int main() {
     printf("Número de pontos turísticos (ex.: 15): ");
     scanf("%d", &pontosTuristicos1);
 
+    
 
     // Solicitando dados da segunda carta para o usuário
     printf("\nInforme abaixo os dados referentes à segunda carta:\n");
